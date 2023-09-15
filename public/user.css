@@ -1,0 +1,23 @@
+.container{
+
+    margin-top: 20px !important;
+}
+h2,h5{
+  color: rgb(219, 175, 44) !important;
+}
+.card-body{
+  background-color: #1d1c1c;
+  color:rgb(219, 175, 44) !important ;
+  /* margin-top: 10px; */
+}
+
+.modal-content {
+    background-color: #0c0c0c !important;
+    /* color:rgb(219, 175, 44) !important ; */
+}
+body{
+    background-color:rgb(219, 175, 44) !important;
+}
+#restaurantsList{
+  background-color: rgb(219, 175, 44)!important;
+}

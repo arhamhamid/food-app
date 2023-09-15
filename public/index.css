@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(24, 23, 23) !important;
+}
+
+.login-form {
+    background-color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+#mainheading {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.modal-content {
+    background-color: #0c0c0c !important;
+}
+
+body {
+    background-color: #161515 !important;
+}

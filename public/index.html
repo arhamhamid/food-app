@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+ 
+<body>  
+      <!-- navbar -->
+      <nav class="nav">
+        <div class="container">
+            <!-- Logo -->
+            <img src="food fusion.png" alt="" style="width: 90px; height: 90px; margin-top: -20px;">
+    
+            <div class="d-flex justify-content-end align-items-center" style="margin-top: -50px;"> <!-- Add align-items-center for vertical alignment and margin-top to adjust alignment -->
+                <button type="button" class="btn btn-warning" id="signup" style="margin-right: 10px;">Sign-Up</button>
+                <button type="button" class="btn btn-warning" id="login">Log-In</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1 id="mainheading" style="color: #FFCA2C;">FOOD FUSION </h1>
+    
+    <!-- signup btns -->
+    
+    <div id="signupbtns" class="form-container" style="color: #FFCA2C;">
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic outlined example">
+            <!-- restuarant sign up -->
+            <button type="button" class="btn btn-outline-warning"  data-bs-toggle="modal"
+                data-bs-target="#signuprestuarant">
+                Sign-Up as a Restaurant
+            </button>
+            <div class="modal fade" id="signuprestuarant" tabindex="-1" aria-labelledby="userModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Register Your Restuarant</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <label for="">Restuarant Name</label>
+                            <input type="text" name="" id="restuarantname" placeholder="Enter Restuarant Name"
+                                class="form-control">
+                            <label for="">Email :</label>
+                            <input type="email" name="signrestuarantemail" id="signrestuarantemail" class="form-control"
+                                placeholder="Enter Email">
+                            <label for="">Password :</label>
+                            <input type="password" name="signrestuarantpass" class="form-control"
+                                id="signrestuarantpass" placeholder="Enter Password">
+                            <label for="customerCountry">Country:</label>
+                            <input type="text" class="form-control" id="restuarantcountry" placeholder="Enter country">
+                            <label for="customerCity">City:</label>
+                            <input type="text" class="form-control" id="restuarantcity" placeholder="Enter city">
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" id="signupbtnrestuarant">sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user sign up -->
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signupuser">
+                Sign-Up as a User
+            </button>
+            <div class="modal fade" id="signupuser" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Register User</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <label for="">username :</label>
+                            <input type="text" id="username" class="form-control" placeholder="Enter Name">
+                            <label for="">Email :</label>
+                            <input type="email" name="" id="signuseremail" class="form-control"
+                                placeholder="Enter Email">
+                            <label for="">Contact Number</label>
+                            <input type="number" name="" id="usersontact" class="form-control"
+                                placeholder="Enter Contact Number">
+                            <label for="customerCountry">Country:</label>
+                            <input type="text" class="form-control" id="usercountry" placeholder="Enter country">
+                            <label for="customerCity">City:</label>
+                            <input type="text" class="form-control" id="usercity" placeholder="Enter city">
+                            <label for="">Password :</label>
+                            <input type="password" name="" class="form-control" id="signuserpass"
+                                placeholder="Enter Password">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" id="signupbtnuser">Sign-Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- login btns -->
+
+    <div id="loginbtns" class="form-container">
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic outlined example">
+            <!-- restarant login -->
+
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                data-bs-target="#loginrestuarant">
+                Log-In as a Restaurant
+            </button>
+            <div class="modal fade" style="color: #FFCA2C;" id="loginrestuarant" tabindex="-1" aria-labelledby="restaurantModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Log-In Restuarant</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="color: #FFCA2C;">
+                            <label for="">Email :</label>
+                            <input type="email" name="" id="logrestuarantemail" class="form-control" 
+                                placeholder="Enter Email">
+                            <label for="">Password :</label>
+                            <input type="password" name="" class="form-control" id="logrestuarantpass"
+                                placeholder="Enter Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" id="loginbtnrestuarant">Log-In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user login -->
+
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginuser">
+                Log-In as a User
+            </button>
+            <div class="modal fade" style="color: #FFCA2C;" id="loginuser" tabindex="-1" aria-labelledby="restaurantModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Log-In User</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="color: #FFCA2C;">
+                            <label for="">Email :</label>
+                            <input type="email" name="" id="loguseremail" class="form-control"
+                                placeholder="Enter Email">
+                            <label for="">Password :</label>
+                            <input type="password" name="" class="form-control" id="loguserpass"
+                                placeholder="Enter Password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" id="loginbtnuser">Log-In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
